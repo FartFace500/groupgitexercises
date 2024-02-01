@@ -2,11 +2,12 @@ import java.util.Random;
 
 public class Main {
     public static void main( String[] args ) {
+        int maxNumber = 200;
         {
             Random random = new Random();
             
             for ( int i = 0; i < 100; i++ ) {
-                int roll = random.nextInt( 100 ) + 1;
+                int roll = random.nextInt( maxNumber ) + 1;
                 if ( roll % 5 == 0 && roll % 3 == 0 ) {
                     System.out.println( roll + " FizzFuzz" );
                 } else if ( roll % 3 == 0 ) {
@@ -25,7 +26,7 @@ public class Main {
             
             for ( int i = 0; i < 1000; i++ ) {
                 
-                iInput = random.nextInt( 100 ) + 1;
+                iInput = random.nextInt( maxNumber ) + 1;
                 
                 System.out.println( "Input = " + iInput );
                 

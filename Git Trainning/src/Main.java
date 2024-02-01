@@ -8,11 +8,11 @@ public class Main {
             for ( int i = 0; i < 100; i++ ) {
                 int roll = random.nextInt( 100 ) + 1;
                 if ( roll % 5 == 0 && roll % 3 == 0 ) {
-                    System.out.println( roll + " FizzFuzz" );
+                    System.out.println( roll + " BuzzFizz" );
                 } else if ( roll % 3 == 0 ) {
                     System.out.println( roll + " Fizz" );
                 } else if ( roll % 5 == 0 ) {
-                    System.out.println( roll + " Fuzz" );
+                    System.out.println( roll + " Buzz" );
                 } else {
                     System.out.println( roll );
                 }
@@ -30,7 +30,7 @@ public class Main {
                 System.out.println( "Input = " + iInput );
                 
                 if ( iInput % 3 == 0 && iInput % 5 == 0 ) {
-                    System.out.println( "FizzBuzz" );
+                    System.out.println( "BuzzFizz" );
                 } else if ( iInput % 3 == 0 ) {
                     System.out.println( "Fizz" );
                 } else if ( iInput % 5 == 0 ) {
